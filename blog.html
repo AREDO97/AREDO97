@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(max-width:600px) {
+            
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: system-ui, -apple-system, 
+            BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header{
+            background-color: white;
+            height: 68px;
+           
+        }
+        header .logo{
+            display: flex;
+            align-items: center;
+            margin: 0 30%;
+            color: black;
+        }
+        header .logo img{
+            width: 30px;
+            border-radius: 10px;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 3%;
+        }
+        nav{
+            margin-top: 2%;
+            margin-left: 12%;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li::after{
+            content: "";
+            transition: 0.5s;
+            background:  rgb(32, 17, 17);
+            height: 2px;
+            width: 0%;
+            display: block;
+        }
+        nav ul li:hover:after{
+            width: 100%;
+        }
+
+        .service1{
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photos/download (2).jpeg");
+            background-size: cover;
+            background-position: center;
+           
+            height: 400px;
+            background-position: center;
+        }
+        /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+        */
+        .service1 h4{
+            padding-top: 15px;
+            padding-left: 50px;
+            font-size: 22px;
+            color: rgb(17, 2, 2);
+            font-weight: bolder;
+        }
+        .service1 h2{
+            padding-top:100px ;
+            color: rgb(107, 6, 6);
+           
+            padding-left: 50px;
+            font-size: 35px;
+        }
+        .blog2 h2,p{
+            margin: 2% 15%;
+        }
+        .blog2 .main img{
+            width: 50%;
+            object-fit: cover;
+            height: 100px;
+            margin: 2% 10%;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .left,.right{
+            text-align: left;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .blog3 h2,p{
+            margin: 2% 15%;
+        }
+        .blog4 h4,p{
+            margin: 2% 15%;
+        }
+        .blog3  img{
+            width: 80%;
+            object-fit: cover;
+            height: 300px;
+            margin: 2% 10%;
+            border-radius: 10%;
+        }
+        .blog4 h2,p{
+            margin: 2% 15%;
+        }
+     
+        footer{
+            color: black;
+            background: white;
+            height: 65px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        footer p{
+            padding-top: 10px;
+            font-size: 13px;
+        }
+        .hide{
+            display: none;
+            border: 2px solid black;
+            padding: 3%;
+            box-shadow: black 10px 10px 10px 10px;
+        }
+        }
+        
+    
+    @media (min-width:601px) {
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: system-ui, -apple-system, 
+            BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header{
+            background-color: white;
+            height: 80px;
+           
+        }
+        header .logo{
+            display: flex;
+            align-items: center;
+            margin: 0 30%;
+            color: black;
+        }
+        header .logo img{
+            width: 30px;
+            border-radius: 10px;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 3%;
+        }
+        nav{
+            margin-top: 2%;
+            margin-left: 20%;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li::after{
+            content: "";
+            transition: 0.5s;
+            background:  rgb(32, 17, 17);
+            height: 2px;
+            width: 0%;
+            display: block;
+        }
+        nav ul li:hover:after{
+            width: 100%;
+        }
+
+        
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="photos/logo3.png" alt="">
+            <h4>Jxs Global</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          <!--<img src="photos/city.jpeg" alt="">
+            -->  
+        </nav>
+    </header>
+    <section class="service1">
+        <h2>Insights and Inspiration</h2>
+        <h4>Explore the latest trends and ideas in business and marketing</h4>
+    </section>
+    <section class="blog2">
+        <h2>Recent Trends in Marketing</h2>
+        <p>Stay ahead of the curve with the latest insights</p>
+        <div class="main">
+            <div class="left">
+<img src="photos/fav1.jpg" alt="">
+<p>The rise of Digital Marketing in 2025</p>
+            </div>
+            <div class="right">
+<img src="photos/research.jpg" alt="">
+<p>Leveraging Social Media for Business Growth.</p>
+            </div>
+        </div>
+    </section>
+    <section class="blog3">
+        <h2>Expert Insights on Business Strategies</h2>
+        <p>Gain knowledge from industry leaders and enhance your strategies</p>
+        <img src="photos/growth.jpg" alt="">
+    </section>
+    <section class="blog4">
+<h2>Frequently Asked Questions</h2>
+<span>
+    <h4>What services does Jxs Global provide ?
+         <span class="plus" onclick="showMore()">+</span></h4>
+    <p class="hide">Jxs Global specialises in international 
+        business and marketing strategies ,offering Services such as 
+        market reserach ,brand development
+        ,digital marketing and strategic consulting.
+        Our goal is to help businesses 
+        navigate the complexeties of global markets.
+     </p>
+</span>
+
+
+   </section>
+    <footer>
+        <p>&copy; Jxs Global 2025 .All rights reserved</p>
+    </footer>
+    <script>
+let hide=document.querySelector('.hide');
+let plus=document.querySelector('.plus');
+function showMore(){
+    if (hide.style.display==="none"){
+        hide.style.display="inline-block";
+        plus.innerHTML="-";
+    }
+    else{
+         hide.style.display="none";
+        plus.innerHTML="+";
+    }
+}
+    </script>
+</body>
+</html>
